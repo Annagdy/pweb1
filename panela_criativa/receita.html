@@ -4,13 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
-    <link rel="stylesheet" href="teste1.css">
+    <link rel="stylesheet" href="receita-style.css">
 </head>
 <body>
   <header>
-    <h1>Seu Cabeçalho Aqui</h1>
-   
+    <a href ="pagina-inicial.html">
+      <img src="logo.svg" alt="icon-header" class="site-logo">
+    </a>  
+  
+    <div class="header-left">
+      <a href="login.html" class="login-button">Login</a>
+      <a href="cadastro.html" class="signup-button">Cadastro</a>
+    </div>
   </header>
+
     <div class="container" >
         <h1>Envie sua Receita</h1>
 
@@ -51,8 +58,18 @@
     </div>
 
     <footer>
-      <p>Seu Rodapé Aqui</p>
-      <!-- Adicione qualquer conteúdo adicional do rodapé -->
+      <div style="align-items: center; display: flex; padding-right: 2rem;">
+        
+        <a id="links-login" href="">Quem somos</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Fale conosco</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Termos e Condições</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Política de Privacidade</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Política de cookies</a>
+      </div>
     </footer>
     <script src="script.js"></script>
 </body>
