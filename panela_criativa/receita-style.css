@@ -1,14 +1,14 @@
 body {
-  
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
   background-image: url('background.png');
   background-size: cover;
-  background-repeat: no-repeat;
   background-position: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  height: 100vh;
 }
 
 header {
@@ -100,4 +100,19 @@ footer{
   background-color: #b3e5fc;
   font-size: 15px;
   justify-content: center;
+}
+
+.search-bar {
+  margin: 0 10px; /* Adiciona margem à barra de pesquisa */
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  margin-left: 70px;
+  margin-top: 15px;
 }
