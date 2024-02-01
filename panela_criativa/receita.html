@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Receitas</title>
     <link rel="stylesheet" href="receita-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
   <header>
     <a href ="pagina-inicial.html">
       <img src="logo.svg" alt="icon-header" class="site-logo">
     </a>  
+
   
+
+
     <div class="header-left">
       <a href="login.html" class="login-button">Login</a>
       <a href="cadastro.html" class="signup-button">Cadastro</a>
     </div>
+
+    
   </header>
 
     <div class="container" >
@@ -24,10 +31,9 @@
         <form id="recipeForm">
           <label for="recipeName">Nome da Receita:</label>
           <input type="text" id="recipeName" name="recipeName" required>
-          <div id="ingredientList">
-            <label for="ingredients">Ingredientes (um por linha):</label>
-            <textarea id="ingredients" name="ingredients" required></textarea>
-          </div>
+          <label for="ingredients">Ingredientes (um por linha):</label>
+          <textarea id="ingredients" name="ingredients" required></textarea>
+          <div id="ingredientsList"></div>
   
           <label for="recipeImage">Foto da Receita:</label>
           <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
