@@ -119,3 +119,19 @@ function search() {
   // Faça algo com o termo de pesquisa, por exemplo, redirecione para uma página de resultados
   window.location.href = 'resultados.html?q=' + encodeURIComponent(searchTerm);
 }
+
+
+function validateLogin() {
+  var email = document.getElementById('email').value;
+  var password = document.getElementById('password').value;
+
+  // Verificação de login e senha padrão (exemplo)
+  if (email === 'seuemail@example.com' && password === 'suasenha') {
+    alert('Login bem-sucedido!');
+    window.location.href = 'perfil.html'; // Redireciona para a página de perfil
+    return false; // Evita o envio do formulário
+  } else {
+    alert('Login ou senha incorretos.');
+    return false; // Evita o envio do formulário
+  }
+}
