@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil</title>
-    <link rel="stylesheet" href="perfil.css">
+    <link rel="stylesheet" href="perfil-style.css">
 </head>
 <body>
     <header class="cabecalho">
         <div style="align-items: center; display: flex; margin-bottom: 12px;">
-            <img  width="100" height="100" src="/panela_criativa/imgs/panelacriativa_logo.png" alt="">
+            <a href="pagina-inicial.html"><img  width="100" height="100" src="logo.svg" alt=""></a>
         </div>
         
         <style>
@@ -20,22 +20,22 @@
 
         <div id="divBusca" style="align-items: center; display: flex; margin:auto;">
             <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
-            <img width="15" height="15" src="/panela_criativa/imgs/lupa-de-pesquisa.png" alt="Buscar..."/>
+            <img width="15" height="15" src="lupa-de-pesquisa.png" alt="Buscar..."/>
             <input type="text" id="txtBusca" placeholder="O que você deseja cozinhar?... "/>
             <button id="btnBusca">Buscar</button>
         </div>
 
         <div style="align-items: center; display: flex; padding-right: 2rem;">
-            <img style="padding-right: 5px;" width="20" height="20" src="/panela_criativa/imgs/perfil.png" alt="Perfil"/>
-            <a id="links-login" style="padding-right: 3px;" href="">Entrar</a>
+            <img style="padding-right: 5px;" width="20" height="20" src="perfil.png" alt="Perfil"/>
+            <a href="login.html" id="links-login" style="padding-right: 3px;" href="">Entrar</a>
             <h6>|</h6>
-            <a id="links-login" style="padding-left: 3px;" href="">Cadastro</a>
+            <a href="cadastro.html" id="links-login" style="padding-left: 3px;" href="">Cadastro</a>
         </div>
     </header>
 
     <section class="mid"; style="align-items: center">
         <div class="card-perfil">
-            <img src="/panela_criativa/imgs/image 8.png" alt="Avatar" style="width:100%">
+            <img src="perfil.png" alt="Avatar" style="width:100%">
             <div class="container">
                 <h4><b>Nome do User</b></h4> 
                 <p>Profissão do User</p> 
@@ -47,7 +47,7 @@
         </div>
         <div class="conteudo-perfil">
             <div class="button-add-receita">
-                <b>Adicionar Receita</b>
+                <a href="receita.html">Adicionar Receita</a>
             </div>
             <div class="favoritos">
                 Receitas
