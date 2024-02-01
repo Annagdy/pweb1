@@ -29,7 +29,7 @@
 
     <h1>Entrar</h1>
 
-    <form id="login-form">
+    <form id="login-form" onsubmit="return validateLogin()">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
@@ -46,11 +46,13 @@
     <div class="or-separator">
       <span>OU</span>
     </div>
-
-    <button class="gmail-login">Entrar com Gmail</button>
-
+    <div class="gmail-login">
+      <a  href="#" id="googleSignInLink">Entrar com o Gmail</a>
+      <script src="script.js"></script>
+    </div>
     <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
