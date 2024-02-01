@@ -101,10 +101,25 @@ body {
   }
 
   .gmail-login {
-    background-color: #dc4e41;
+    background-color: #4FC3F7;
     color: #ffffff;
     padding: 10px;
-    width: 100%;
+    width: 95%;
     border: none;
     cursor: pointer;
+  }
+
+  .search-bar {
+    margin: 0 10px; /* Adiciona margem à barra de pesquisa */
+  }
+  
+  .search-bar input {
+    width: 400px;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    margin-left: 70px;
+    margin-top: 15px;
   }
