@@ -1,82 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panela Criativa</title>
-    <link rel="stylesheet" href="pagina-inicial.css">
-</head>
-<body>
-    <header class="cabecalho">
-        <div style="align-items: center; display: flex; margin-bottom: 12px;">
-            <img  width="150" height="150" src="/panela_criativa/imgs/panelacriativa_logo.png" alt="">
-        </div>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="pagina-inicial-style.css">
+        <script src="script.js"></script>
+        <title>Panela Criativa</title>
         
-        <style>
-            body {
-                font-family: 'Inknut Antiqua';font-size: 22px;
-            }
-        </style>
+        <link rel="icon" type="image/png" href="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\panela_criativa\imgs\panelacriativa_logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="logo-container">
+                <img class="icon-header" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\panela_criativa\imgs\panelacriativa_logo.png">
+            </div>
+            
+            <div class="search-bar">
+                <input type="text" placeholder="O que você deseja cozinhar?">
+                
+            </div>
 
-        <div id="divBusca" style="align-items: center; display: flex; margin:auto;">
-            <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
-            <img width="15" height="15" src="/panela_criativa/imgs/lupa-de-pesquisa.png" alt="Buscar..."/>
-            <input type="text" id="txtBusca" placeholder="O que você deseja cozinhar?... "/>
-            <button id="btnBusca">Buscar</button>
-        </div>
+            <div class="user-actions">
+                <a href="login.html"><button type="button">Login</button></a>
+                <a href="cadastro.html"><button type="buttom">Cadastrar</button></a>
+            </div>
+        </header>
 
-        <div style="align-items: center; display: flex; padding-right: 2rem;">
-            <img style="padding-right: 5px; width="20" height="20" src="/panela_criativa/imgs/perfil.png" alt="Perfil"/>
-            <a id="links-login" style="padding-right: 3px;" href="">Entrar</a>
-            <h4>|</h4>
-            <a id="links-login" style="padding-left: 3px;" href="">Cadastro</a>
-        </div>
-    </header>
+        <div></div>
 
-    <div class="mid">
-        <div style="display: flex; width: 100%; height: 100px;">
-            <div style="background-color: #B3E5FC; height: auto; border-radius: 5px; margin-right: auto; margin-left: auto; margin-top: auto; padding-left: 5px; padding-right: 5px;">
-                <b style="color: black;">
-                    Receitas Destaques
-                </b>
+        <div class="receitas-destaque">
+            <h2>Receitas Destaque</h2>
+            <div class="destaque">
+                <div>
+                    <img class="dest1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\almoco_1.png">
+                    <h4>Almoço</h4>
+                </div>
+                <div>
+                    <img class="dest1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\fit_1.png">
+                    <h4>Fitness</h4>
+                </div>
+                <div>
+                    <img class="dest1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\janta_1.png">
+                    <h4>Jantar</h4>
+                </div>
+                <div>
+                    <img class="dest1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\lanche_1.png">
+                    <h4>Lanche</h4>
+                </div>
             </div>
         </div>
-    
-       <div  style="display: flex; overflow: auto; width: 100%; justify-content: space-around; height: 450px;">
-       
-        
-        <div class="card">
-            <img decoding="async" src="/panela_criativa/imgs/fit_1.png" alt="">
-            <h3>Fit</h3>
+
+        <div class="receitas-recente">
+            <h2>Recém Adicionadas</h2>
+            <div class="recem">
+                <div>
+                    <img class="recem1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\almoco_1.png">
+                    <h4>Almoço</h4>
+                </div>
+                <div>
+                    <img class="recem1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\fit_1.png">
+                    <h4>Fitness</h4>
+                </div>
+                <div>
+                    <img class="recem1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\janta_1.png">
+                    <h4>Jantar</h4>
+                </div>
+                <div>
+                    <img class="recem1" src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\lanche_1.png">
+                    <h4>Lanche</h4>
+                </div>
+            </div>
         </div>
-    
-        <div class="card">
-            <img decoding="async" src="/panela_criativa/imgs/almoco_1.png" alt="">
-            <h3>Almoço</h3>
+
+        <div class="categoria-bloco">
+            <h2 class="categoria">Receitas de Pão e Bolo</h2>
+            <ul class="subcategoria">
+                <li class="subc-item">Subcategoria 1</li>
+                <li class="subc-item">Subcategoria 2</li>
+                <li class="subc-item">Subcategoria 3</li>
+            </ul>
         </div>
-    
-        <div class="card">
-            <img decoding="async" src="/panela_criativa/imgs/janta_1.png" alt="">
-            <h3>Janta</h3>
+
+        <div class="categoria-bloco">
+            <h2 class="categoria">Receitas de Pão e Bolo</h2>
+            <ul class="subcategoria">
+                <li class="subc-item">Subcategoria 1</li>
+                <li class="subc-item">Subcategoria 2</li>
+                <li class="subc-item">Subcategoria 3</li>
+            </ul>
         </div>
-    
-        <div class="card">
-            <img decoding="async" src="/panela_criativa/imgs/lanche_1.png" alt="">
-            <h3>Lanches</h3>
-        </div>  
-      
-      
-       </div>
-    
-       <div style="display: flex; width: 100%; height: 100px;">
-        <div style="background-color: #B3E5FC; height: auto; border-radius: 5px; margin-right: auto; margin-left: auto; margin-top: auto; padding-left: 5px; padding-right: 5px;">
-            <b style="color: black;">
-                Recem Adicionados
-            </b>
+
+        <div class="categoria-bloco">
+            <h2 class="categoria">Receitas de Pão e Bolo</h2>
+            <ul class="subcategoria">
+                <li class="subc-item">Subcategoria 1</li>
+                <li class="subc-item">Subcategoria 2</li>
+                <li class="subc-item">Subcategoria 3</li>
+            </ul>
         </div>
-    </div>
-    </div>
-    
-    
-</body>
+    </body>
 </html>

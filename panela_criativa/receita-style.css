@@ -1,118 +1,74 @@
 body {
-  font-family: 'Josefin Sans', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-image: url('background.png');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 100vh;
-}
+    font-family: 'Josefin Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
 
-header {
-  width: 100%;
-  height: 55px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #B3E5FC;
-  padding: 10px 0;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-.header-left {
-  display: flex;
-}
+  .site-logo{
+    width: 100%;
+    height: 100px;
+  }
 
-.container {
-  text-align: center;
-  background-color: #fff;
-  padding: 40px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 80%;
-  max-width: 1000px;
-  margin: 20px auto; /* Espaçamento entre o cabeçalho e o formulário */
-}
-
-form {
-  margin: 0 auto;
-}
-
-label {
-  display: block;
-  margin-bottom: 10px;
-}
-
-input,
-textarea,
-select {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 15px;
-  box-sizing: border-box;
-}
-
-button {
-  padding: 12px;
-  background-color: #4caf50;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  margin-bottom: 25px;
-}
-
-.login-button,
-.signup-button {
-    margin-right: 10px;
-    background-color: #4FC3F7;
-    color: #000000;
+  .logo{
+    width: 100%;
+    height: 350px;
+  }
+  
+  .criar-receita-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .criar-receita-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  form {
+    display: grid;
+    gap: 10px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
     padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    width: 100%;
     border: none;
     cursor: pointer;
-    border-radius: 5px;
-    text-decoration: none;
-}
-
-button:hover {
-  background-color: #45a049;
+  }
   
-}
-
-input[type="submit"] {
-  background-color: #008CBA;
-}
-
-textarea#ingredients {
-  width: 100%; 
-  height: 180px; 
-  box-sizing: border-box; 
-  resize: none; 
-}
-
-footer{
-  width: 100%;
-  height: 90px;
-  display: flex;
-  background-color: #b3e5fc;
-  font-size: 15px;
-  justify-content: center;
-}
-
-.search-bar {
-  margin: 0 10px; /* Adiciona margem à barra de pesquisa */
-}
-
-.search-bar input {
-  width: 400px;
-  padding: 8px;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  display: flex;
-  margin-left: 70px;
-  margin-top: 15px;
-}
+  button:hover {
+    background-color: #555;
+  }
+  
+  #passos-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  #passos-list li {
+    margin-bottom: 8px;
+  }
+  
