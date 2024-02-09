@@ -1,72 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Criar Receita - Panela Criativa</title>
-  <link rel="stylesheet" href="receita-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas</title>
+    <link rel="stylesheet" href="receita-style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
+  <header>
+    <a href ="pagina-inicial.html">
+      <img src="logo.svg" alt="icon-header" class="site-logo">
+    </a>  
+    <div class="search-bar">
+      <input type="text" placeholder="O que você deseja cozinhar?">
+    </div>
+    <div class="header-left">
+      <a href="login.html" class="login-button">Login</a>
+      <a href="cadastro.html" class="signup-button">Cadastro</a>
+    </div>
 
-  <header class="criar-receita-header">
-    <h1>Criar Nova Receita</h1>
+    
   </header>
 
-  <div class="criar-receita-container">
-    
-    <form id="criar-receita-form">
+    <div class="container" >
+        <h1>Envie sua Receita</h1>
 
-      <label for="titulo">Título da Receita:</label>
-      <input type="text" id="titulo" name="titulo" required>
+        <form id="recipeForm">
+          <label for="recipeName">Nome da Receita:</label>
+          <input type="text" id="recipeName" name="recipeName" required>
+          <label for="ingredients">Ingredientes (um por linha):</label>
+          <textarea id="ingredients" name="ingredients" required></textarea>
+          <div id="ingredientsList"></div>
+  
+          <label for="recipeImage">Foto da Receita:</label>
+          <input type="file" id="recipeImage" name="recipeImage" accept="image/*">
+  
+          <label for="difficulty">Dificuldade:</label>
+          <select id="difficulty" name="difficulty">
+              <option value="fácil">Fácil</option>
+              <option value="média">Média</option>
+              <option value="difícil">Difícil</option>
+          </select>
+  
+          <label for="preparationTime">Tempo de Preparo (minutos):</label>
+          <input type="number" id="preparationTime" name="preparationTime" required>
+  
+          <label for="cost">Custo:</label>
+          <input type="text" id="cost" name="cost" required>
+  
+          <h2>Passos</h2>
+          <ul id="stepsList">
+              <!-- Passos serão adicionados dinamicamente com JavaScript -->
+          </ul>
+          
+          <button type="button" onclick="addStep()">Adicionar Passo</button>
+          <button type="button" onclick="removeStep()">Remover Último Passo</button>
+  
+          <input type="submit" value="Enviar Receita">
+        
+    </div>
 
-      <label for="foto">Foto da Receita:</label>
-      <input type="file" id="foto" name="foto" accept="image/*">
-
-      <label for="apresentacao">Apresentação:</label>
-      <textarea id="apresentacao" name="apresentacao" rows="4" required></textarea>
-
-      <label for="dificuldade">Dificuldade:</label>
-      <select id="dificuldade" name="dificuldade">
-        <option value="facil">Fácil</option>
-        <option value="medio">Médio</option>
-        <option value="dificil">Difícil</option>
-      </select>
-
-      <label for="custo">Custo:</label>
-      <select id="custo" name="custo">
-        <option value="baixo">Baixo</option>
-        <option value="medio">Médio</option>
-        <option value="alto">Alto</option>
-      </select>
-
-      <label for="tempo-preparo">Tempo de Preparo (minutos):</label>
-      <input type="number" id="tempo-preparo" name="tempo-preparo" required>
-
-      <label for="ingredientes">Ingredientes:</label>
-      <textarea id="ingredientes" name="ingredientes" rows="4" required></textarea>
-
-      <label for="tempo-espera">Tempo de Espera (minutos):</label>
-      <input type="number" id="tempo-espera" name="tempo-espera">
-
-      <label for="passos">Passos:</label>
-      <ul id="passos-list">
-        <li><input type="text" name="passo[]" required></li>
-      </ul>
-      <button type="button" onclick="adicionarPasso()">Adicionar Passo</button>
-
-      <button type="submit"><a href=receita-mostra.html>Criar Receita</a></button>
-    </form>
-
-  </div>
-
-  <script>
-    function adicionarPasso() {
-      const passosList = document.getElementById('passos-list');
-      const novoPasso = document.createElement('li');
-      novoPasso.innerHTML = '<input type="text" name="passo[]" required>';
-      passosList.appendChild(novoPasso);
-    }
-  </script>
-
+    <footer>
+      <div style="align-items: center; display: flex; padding-right: 2rem;">
+        
+        <a id="links-login" href="">Quem somos</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Fale conosco</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Termos e Condições</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Política de Privacidade</a>
+        <h2 style="padding-inline: 5px;">|</h2>
+        <a id="links-login"  href="">Política de cookies</a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
