@@ -10,8 +10,12 @@
   
   <header>
     <a href ="pagina-inicial.html">
-    <img src="/pweb1-main/pweb1-main/panela_criativa/imgs/panelacriativa_logo.png" alt="icon-header" class="site-logo">
+    <img src="logo.svg" alt="icon-header" class="site-logo">
     </a>  
+
+    <div class="search-bar">
+      <input type="text" placeholder="O que você deseja cozinhar?">
+    </div>
 
     <div class="header-left">
       <a href="login.html" class="login-button">Login</a>
@@ -24,12 +28,12 @@
   <div class="login-container">
     
     <a href="pagina-inicial.html">
-      <img src="C:\Users\Usuário\OneDrive\Documentos\prog\pweb1\pweb1-main\pweb1-main\panela_criativa\imgs\panelacriativa_logo.png" alt="Logo do Site de Receitas" class="logo">
+      <img src="logo.svg" alt="Logo do Site de Receitas" class="logo">
     </a>
 
     <h1>Entrar</h1>
 
-    <form id="login-form">
+    <form id="login-form" onsubmit="return validateLogin()">
       <label for="email">Email:</label>
       <input type="email" id="email" name="email" required>
 
@@ -46,11 +50,13 @@
     <div class="or-separator">
       <span>OU</span>
     </div>
-
-    <button class="gmail-login">Entrar com Gmail</button>
-
+    <div class="gmail-login">
+      <a  href="#" id="googleSignInLink">Entrar com o Gmail</a>
+      <script src="script.js"></script>
+    </div>
     <p>Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
   </div>
-
+  
+  <script src="script.js"></script>
 </body>
 </html>
