@@ -45,14 +45,15 @@ header{
   
   #btnBusca{
     border:none;
-    float:left;
     height:32px;
     border-radius:0 7px 7px 0;
     width:70px;
     font-weight:bold;
     background:#67B6C9;
+    text-decoration: none;
+    font-size: 15px;
   }
-  
+
   #divBusca img{
     float:right;
   }
@@ -83,7 +84,6 @@ body {
 
 .destaque {
     display: inline-flex;
-    flex-wrap: wrap;
     gap: 0.5px;
 }
 
