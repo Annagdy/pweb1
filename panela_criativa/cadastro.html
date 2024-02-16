@@ -6,44 +6,65 @@
   <title>Cadastro - Panela Criativa</title>
   <link rel="stylesheet" href="cadastro-style.css">
 </head>
-<body>
-  
-  <header>
-    <a href ="pagina-inicial.html">
-    <img src="imgs/panelacriativa_logo.png" alt="icon-header" class="site-logo">
-    </a>  
+  <body>
+    
+    <header>
+      <a href ="pagina-inicial.html">
+      <img src="imgs/panelacriativa_logo.png" alt="icon-header" class="site-logo">
+      </a>
+      
+      <div id="divBusca" style="align-items: center; display: flex; margin:auto;">
+        <link href='https://fonts.googleapis.com/css?family=Inknut Antiqua' rel='stylesheet'>
+        <img width="15" height="15" src="imgs/lupa-de-pesquisa.png" alt="Buscar..."/>
+        <input type="text" id="txtBusca" placeholder="O que você deseja cozinhar?... "/>
+        <button id="btnBusca">Buscar</button>
+      </div>
 
-    <div class="header-left">
-      <a href="login.html" class="login-button">Login</a>
-      <a href="cadastro.html" class="signup-button">Cadastro</a>
+      <div class="header-left">
+        <a href="login.html" class="login-button">Login</a>
+        <a href="cadastro.html" class="signup-button">Cadastro</a>
+      </div>
+
+    </header>
+
+    <div class="cadastro-container">
+
+      <img src="imgs/panelacriativa_logo.png" alt="Logo do Site de Receitas" class="logo">
+
+      <h1>Cadastro</h1>
+
+      <form id="cadastro-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <label for="senha">Confirmar Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <p>Já tem uma conta? <a href="login.html">Faça o login</a></p>
     </div>
 
-  </header>
-
-  <div class="cadastro-container">
-
-    <img src="imgs/panelacriativa_logo.png" alt="Logo do Site de Receitas" class="logo">
-
-    <h1>Cadastro</h1>
-
-    <form id="cadastro-form">
-      <label for="nome">Nome:</label>
-      <input type="text" id="nome" name="nome" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="senha">Senha:</label>
-      <input type="password" id="senha" name="senha" required>
-
-      <label for="senha">Confirmar Senha:</label>
-      <input type="password" id="senha" name="senha" required>
-
-      <button type="submit">Cadastrar</button>
-    </form>
-
-    <p>Já tem uma conta? <a href="login.html">Faça o login</a></p>
-  </div>
-
-</body>
+    <section class="rodape">
+      <div style="align-items: center; display: flex; padding-right: 2rem;">
+          <img style="padding-right: 5px;" width="40" height="40" src="imgs/logo.svg" alt="Perfil"/>
+          <a id="links-login" href="">Quem somos</a>
+          <h4 style="padding-inline: 5px;">|</h4>
+          <a id="links-login"  href="">Fale conosco</a>
+          <h4 style="padding-inline: 5px;">|</h4>
+          <a id="links-login"  href="">Termos e Condições</a>
+          <h4 style="padding-inline: 5px;">|</h4>
+          <a id="links-login"  href="">Política de Privacidade</a>
+          <h4 style="padding-inline: 5px;">|</h4>
+          <a id="links-login"  href="">Política de cookies</a>
+      </div>
+    </section>
+  </body>
 </html>

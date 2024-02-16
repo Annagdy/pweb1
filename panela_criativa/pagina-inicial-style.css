@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
-    background-image: url('imgs/background.png');
 }
 
 /* Restante do seu código continua aqui... */
@@ -27,17 +26,36 @@ header{
     height: 130px;
 }
 
-.search-bar{
-    display: flex;
-    align-items: center;
-}
-
-.search-bar input {
-    padding: 10px;
-    margin-right: 10px;
-    width: 300px;
-    border-radius: 5px;
-}
+#divBusca{
+    background-color:#ffffff;
+    width:300px;
+    height:32px;
+  }
+  
+  #txtBusca{
+    float:left;
+    background-color:transparent;
+    padding-left:5px;
+    font-family:inknut antiqua;
+    font-size:15px;
+    border:none;
+    height:32px;
+    width:250px;
+  }
+  
+  #btnBusca{
+    border:none;
+    float:left;
+    height:32px;
+    border-radius:0 7px 7px 0;
+    width:70px;
+    font-weight:bold;
+    background:#67B6C9;
+  }
+  
+  #divBusca img{
+    float:right;
+  }
 
 .user-actions button {
     margin-left: 8px;
@@ -53,6 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-image: url('imgs/background.png');
 }
 
 .receitas-destaque {
@@ -106,8 +125,18 @@ h4{
     margin: 20px;
     padding: 10px; /* Ajuste o padding conforme necessário */
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
+}
+
+.categoria-ip{
+    display: flex;
+}
+
+.categoria-ip h2{
+    align-self: center;
+    padding: 5px;
+    padding-top: 20px;
 }
 
 .categoria {
@@ -118,7 +147,6 @@ h4{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
     flex-direction: column;
     align-items: center;
 }
@@ -131,4 +159,22 @@ h4{
 
 .container-cat{
     display: flex;
+}
+
+.categoria-icon{
+    width: 70px;
+    height:auto;
+    padding: 5px;
+}
+
+.rodape {
+    width: 100%;
+    height: 90px;
+    background-color: rgb(179, 229, 252);
+    font-size: 10px;
+    display: flex; 
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    
 }
