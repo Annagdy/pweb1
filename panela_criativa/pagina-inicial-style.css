@@ -71,25 +71,25 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('imgs/background.png');
+    background-image: url('imgs/background2.png');
 }
 
 .receitas-destaque {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 15px;
+    gap: 5px;
 }
 
 .destaque {
     display: inline-flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0.5px;
 }
 
 .dest1 {
     max-width: 45%; /* Garante que as imagens não ultrapassem a largura do contêiner pai */
     height: auto;
-    margin: 6px; /* Adapte a margem conforme necessário */
     border: 2px solid black; /* Cor branca com 50% de transparência */
     border-radius: 10px;
 }
@@ -106,14 +106,13 @@ h4{
 
 .recem {
     display: inline-flex;
-    justify-content: space-around;
     flex-wrap: wrap;
+    gap: 0.5px;
 }
 
 .recem1 {
     max-width: 45%; /* Garante que as imagens não ultrapassem a largura do contêiner pai */
     height: auto;
-    margin: 6px; /* Adapte a margem conforme necessário */
     border: 2px solid black; /* Cor branca com 50% de transparência */
     border-radius: 10px;
 }

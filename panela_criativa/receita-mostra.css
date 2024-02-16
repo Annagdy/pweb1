@@ -19,6 +19,10 @@ header{
     background: #B3E5FC;
 }
 
+body{
+    background-image: url('imgs/background2.png');
+}
+
 #divBusca{
     background-color:#ffffff;
     width:300px;
