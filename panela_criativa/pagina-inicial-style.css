@@ -71,7 +71,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('imgs/background2');
+    background-image: url('imgs/background2.png');
     font-family: inknut antiqua;
 }
 
